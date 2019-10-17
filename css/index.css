@@ -1,3 +1,370 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+
+#container{
+	width: 65%;
+	margin: 0 auto;
+	padding: 0 2%;
+	border-left: 1px solid lightgray;
+	border-right: 1px solid lightgray;
+}
+
+header{
+	padding: 2% 0 5% 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav{
+    display: flex;
+    flex-wrap: wrap;
+	margin: 0 0 0 0;
+    padding: 2%;
+    width: 70%;
+}
+
+header .logoDiv{
+    padding: 1% 0 0 0;
+    width: 23%;
+}
+
+header .logoDiv img{
+    width: 100%;
+}
+
+header nav .navLinks{
+	color: #888;
+	text-decoration: none;
+    margin: 0 7% 3% 0;	
+}
+
+/* /////////////////////////////////////////////////// */
+
+section#callToAction{
+    display: flex;
+    justify-content: space-around;
+    height: 57vh;
+	width: 98%;
+	margin: 0 auto;
+	padding: 0 0 0 0;
+    border-bottom: 1px solid black;
+}
+
+section#callToAction div{
+	height: 100%;
+	width: 42%;
+    text-align: center;
+}
+
+section#callToAction div:first-child{
+	padding: 10% 0 0 0;
+}
+
+section#callToAction div h1{
+	font-size: 3rem;
+	text-align: center;
+}
+
+section#callToAction div a{
+	padding: 5px 35px;
+	border: solid black 1px;
+	text-decoration: none;
+	color: black;
+}
+
+#callToAction #image2{
+    padding: 25px 0 0 0;
+}
+
+#image2 img{
+    width: 100%;
+}
+
+	/* //////////////////////////////////////////////////////// */
+
+main{
+	padding: 1% 0;
+    width: 98%;
+	margin: 0 auto 50px auto;
+	border-bottom: 1px solid black;
+}
+
+.first-row{
+    display: flex;
+    justify-content: space-around;
+    width: 98%;	
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.first-row-content{
+    width: 45%;
+    height: 100%;
+    padding: 1%;
+}
+
+main .middle-img-div{
+    margin: 0 auto 2% auto;
+    text-align: center;
+    width: 95%;	
+}
+
+.middle-img-div img{
+    width: 100%;
+}
+
+/* ////////// */
+
+.third-row{
+    display: flex;
+    justify-content: space-around;
+	width: 95%;	
+    margin: 0 auto;
+}
+
+.third-row-content{
+    width: 31%;
+    height: 100%;
+    padding: 1%;
+}
+
+/* ////////////////////////////// */
+
+footer{
+    padding: 0 0 0 0;
+}
+
+footer section{
+	padding: 0 0 50px 0;
+	display: flex;
+    width: 100%;
+}
+
+footer p{
+	margin: 5% 0;
+}
+
+footer div.contact{
+	padding: 0 0 25px 5%;
+}
+
+footer .copy{
+	margin: 0 auto 50px auto;
+	width: 100%;
+    text-align: center;
+}
+
+/* ####################### services page ################################## */
+/* ####################################################################### */
+
+.section-one{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 0 50px 0;
+	border-bottom: 1px solid #999;
+}
+
+.header-image-div{
+    margin: 0 0 50px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.header-image-div img{
+    width: 100%;
+}
+
+.services{
+    margin: 0 auto 50px auto;
+    width: 95%;
+}
+
+/* ///////////////////////////// */
+
+.gridDisplay{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+    padding: 0 0 25px 0;
+    margin: 0 auto; 
+	width: 93%;
+	border-bottom: 1px solid #999;
+}
+
+.part{
+	width: 48%;
+	background-color: #f9f9f9;
+	margin: 0 0 25px 0;
+	padding: 10px;
+	border: 1px solid #999;
+}
+
+.part p{
+	margin: 0 0 25px 0;
+}
+/* /////////////////// */
+
+.lastSection{
+	display: flex;
+	padding: 50px 0;
+	margin: 0 0 0 7%;
+}
+
+.lastMain p{
+	margin: 0 0 15px 0;
+}
+
+.lastMain ul{
+	margin: 0 0 0 20px;
+}
+
+.lastMain ul li{
+	list-style-type: square;
+}
+
+footer.copy{
+	margin: 0 0 25px 30px;
+	width: 96%;
+	text-align: center;
+}
+
+/* MEDI QUERIES */
+
+
+@media (max-width: 800px){
+
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header nav{
+        width: 100%;
+    }
+
+    header nav .navLinks{
+        margin: 0 3% 3% 0;	
+    }
+
+    section#callToAction{
+        height: 30vh;
+    }
+
+    #callToAction #image2{
+        display: none;
+    }
+
+    section#callToAction div h1{
+       font-size: 2rem;
+    }
+
+    section#callToAction div a{
+        display: block;
+     }
+
+    .third-row{
+        flex-direction: column;
+    }
+    
+    .third-row-content{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+}
+
+@media( max-width: 500px){
+
+    #container{
+        width: 100%;
+    }
+
+    nav a.navLinks{
+        text-align: center;
+        width: 100%;
+        margin: 0 0 3% 0;
+    }
+
+    .first-row{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .first-row-content{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    #callToAction div:first-child a{
+        margin: 0 auto;
+        padding: 5% 10%;
+    }
+    
+    main .middle-img-div{
+        margin: 0 auto 5% auto;
+        width: 100%;	
+    }
+    
+
+}
