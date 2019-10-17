@@ -266,9 +266,18 @@ footer .copy{
 /* /////////////////// */
 
 .lastSection{
-	display: flex;
+    display: flex;
+    justify-content: space-evenly;
 	padding: 50px 0;
-	margin: 0 0 0 7%;
+	margin: 0 0 50px 0;
+}
+
+.lastSection div{
+    width: 45%; 
+}
+
+.services-info-img-div img{
+    width: 100%;
 }
 
 .lastMain p{
@@ -299,16 +308,23 @@ footer.copy{
         align-items: center;
     }
 
+    header .logoDiv{
+        padding: 2% 0;
+        width: 26%;
+    }
+
     header nav{
         width: 100%;
+        justify-content: space-around;
+        flex-wrap: nowrap;
     }
 
     header nav .navLinks{
-        margin: 0 3% 3% 0;	
+        margin: 0 0 0 0;	
     }
 
     section#callToAction{
-        height: 30vh;
+        height: 34vh;
     }
 
     #callToAction #image2{
@@ -316,7 +332,7 @@ footer.copy{
     }
 
     section#callToAction div h1{
-       font-size: 2rem;
+       font-size: 3rem;
     }
 
     section#callToAction div a{
@@ -332,6 +348,39 @@ footer.copy{
         margin-bottom: 5%;
     }
 
+    /* services page */
+
+    .gridDisplay{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-items: center; 
+    }
+    
+    .part{
+        width: 100%;
+        background-color: #f9f9f9;
+    }
+
+    .lastSection{
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin: 0 0 0 0;
+    }
+
+    .lastMain h3{
+        margin-top: 8%;
+    }
+
+    .lastSection div{
+        width: 100%;
+    }
+
+    .services-info-img-div img{
+        width: 100%;
+    }
+
 }
 
 @media( max-width: 500px){
@@ -340,10 +389,30 @@ footer.copy{
         width: 100%;
     }
 
-    nav a.navLinks{
+    header{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    header .logoDiv{
+        padding: 2% 0;
+        width: 26%;
+    }
+
+    header nav{
+        flex-wrap: wrap;
+    }
+
+    header nav .navLinks{
         text-align: center;
         width: 100%;
-        margin: 0 0 3% 0;
+        padding: 4% 0;
+        border-top: 1px solid #666;
+        margin: 0 0 0 0;	
+    }
+
+    header nav .navLinks:last-child{
+        border-bottom: 1px solid #666;	
     }
 
     .first-row{
